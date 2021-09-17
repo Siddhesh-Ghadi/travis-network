@@ -6,6 +6,8 @@ arch:
 dist: focal
  
 script:
+  - sudo apt update -y
+  - sudo apt install wget -y
   - sudo cat /etc/resolv.conf
   #- curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
   - wget -O /dev/null -q --show-progress http://speedtest.wdc01.softlayer.com/downloads/test500.zip
