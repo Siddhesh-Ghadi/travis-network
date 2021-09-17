@@ -8,5 +8,5 @@ dist: focal
 script:
   - sudo cat /etc/resolv.conf
   #- curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-  - curl http://speedtest.wdc01.softlayer.com/downloads/test500.zip -o /dev/null > /tmp/output
-  - cat /tmp/output
+  - curl http://speedtest.wdc01.softlayer.com/downloads/test500.zip > /tmp/output
+
