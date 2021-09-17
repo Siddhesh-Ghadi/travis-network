@@ -9,7 +9,7 @@ script:
   - echo "On host"
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
   - echo "With brigde network"
-  - docker run --rm -it python sh -c "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+  - docker run --rm -t python sh -c "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
   - echo "With host network"
-  - docker run --network host --rm -it python sh -c "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+  - docker run --network host --rm -t python sh -c "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 
