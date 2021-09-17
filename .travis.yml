@@ -7,10 +7,5 @@ dist: focal
  
 script:
   - sudo cat /etc/resolv.conf
-  - echo "On host"
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
-  - echo "With brigde network"
-  - docker run --rm -t python sh -c "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
-  - echo "With host network"
-  - docker run --network host --rm -t python sh -c "curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
-
+  - wget --output-document=/dev/null http://speedtest.wdc01.softlayer.com/downloads/test500.zip
