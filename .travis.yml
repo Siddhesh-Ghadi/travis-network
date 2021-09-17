@@ -6,6 +6,7 @@ arch:
 dist: focal
  
 script:
+  - sudo cat /etc/resolv.conf
   - echo "On host"
   - curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -
   - echo "With brigde network"
